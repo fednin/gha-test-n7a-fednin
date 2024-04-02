@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: write greetings to txt file     
-      - run: echo 'hello workd!' > greeting.txt
+      - run: echo 'hello workd!!' > greeting.txt
       - name: chek that txt file is there
       - run: ls -la
