@@ -1,0 +1,14 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+      - uses: actions/checkout@v4
+      - name: write greetings to txt file     
+      - run: echo 'hello workd!' > greeting.txt
+      - name: chek that txt file is there
+      - run: ls -la
+      - name: great
+      - run: cat greeting.txt
